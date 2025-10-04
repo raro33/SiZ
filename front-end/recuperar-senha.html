@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha - SiZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <a href="index.html" class="logo auth-logo">SiZ</a>
+        <div class="auth-box">
+            <h2>Recuperar Senha</h2>
+            <p>Informe seu e-mail para enviarmos um link de recuperação.</p>
+            <form action="https://si-z.vercel.vercel.app/api/recuperar-senha" method="POST"> 
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn btn-primary auth-button">
+                    Enviar Link
+                </button>
+            </form>
+            <div class="auth-links">
+                <span>Lembrou da senha? <a href="login.html">Fazer Login</a></span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

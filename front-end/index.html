@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiZ - Seu Universo de Entretenimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo">SiZ</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#series">Séries</a></li>
+            </ul>
+        </nav>
+        <div class="profile-menu">
+            <a href="login.html" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                Login
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/400x150.png?text=Título+do+Filme" alt="Logo do Título em Destaque" class="hero-title-image">
+                <p class="hero-description">Uma breve sinopse sobre o filme ou série em destaque. Aventura, drama e muita ação esperam por você.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary play-button" data-video-id="VIDEO_ID_DESTAQUE">
+                        ▶ Assistir Agora
+                    </button>
+                    <button class="btn btn-secondary" id="minha-lista-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        Minha Lista
+                    </button>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section class="content-rows">
+
+            <div class="content-row" id="filmes">
+                <h2 class="row-title">Novidades</h2>
+                <div class="media-scroller">
+                    <div class="media-card" data-video-id="VIDEO_ID_FILME_1">
+                        <img src="https://via.placeholder.com/400x600.png?text=Filme+1" alt="Poster do Filme 1">
+                        <div class="card-overlay">
+                            <h3>Filme 1</h3>
+                            <p>Aventura, Ficção</p>
+                        </div>
+                    </div>
+                    <div class="media-card" data-video-id="VIDEO_ID_FILME_2">
+                        <img src="https://via.placeholder.com/400x600.png?text=Filme+2" alt="Poster do Filme 2">
+                        <div class="card-overlay">
+                            <h3>Filme 2</h3>
+                            <p>Comédia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row" id="series">
+                <h2 class="row-title">Séries Populares</h2>
+                <div class="media-scroller">
+                    <div class="media-card" data-video-id="VIDEO_ID_SERIE_1">
+                        <img src="https://via.placeholder.com/400x600.png?text=Série+1" alt="Poster da Série 1">
+                        <div class="card-overlay">
+                            <h3>Série 1</h3>
+                            <p>Drama, Suspense</p>
+                        </div>
+                    </div>
+                    <div class="media-card" data-video-id="VIDEO_ID_SERIE_2">
+                        <img src="https://via.placeholder.com/400x600.png?text=Série+2" alt="Poster da Série 2">
+                        <div class="card-overlay">
+                            <h3>Série 2</h3>
+                            <p>Terror</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="brands-section">
+                <div class="brand-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=ESTÚDIO+A" alt="Estúdio A">
+                </div>
+                <div class="brand-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=ESTÚDIO+B" alt="Estúdio B">
+                </div>
+                <div class="brand-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=ESTÚDIO+C" alt="Estúdio C">
+                </div>
+                 <div class="brand-card">
+                    <img src="https://via.placeholder.com/400x250.png?text=ESTÚDIO+D" alt="Estúdio D">
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <div id="video-player-overlay" class="video-player-overlay">
+        <div class="video-player-content">
+            <span id="close-player" class="close-player">&times;</span>
+            <div id="player-container"></div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 SiZ. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Ajuda</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
